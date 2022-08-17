@@ -1,0 +1,239 @@
+body {
+     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/paperboard.jpg') ;
+     background-repeat: no-repeat, repeat;
+     background-color: #cccccc;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}    
+@font-face {
+     font-family: 'jmh_typewriterbold';
+     src: url('../fonts/jmh-typewriter-bold-webfont.woff2') format('woff2'),
+          url('../fonts/jmh-typewriter-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ 
+ }
+.navbar{
+     display: flex;
+     flex-direction: row;
+     position: relative;
+     justify-content: center;
+}
+.navbar img{
+     width: 200px;
+     margin-top: 60px;
+     margin-bottom: 20px;
+}
+
+.banner{
+     display: block ;
+     background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../src/banner.jpg');
+     height: 670px;
+     background-size: cover !important;
+     -webkit-background-size: cover !important;
+     background-repeat: no-repeat;
+     position:relative; 
+     overflow: hidden;
+}
+hr{
+     width: 50%;
+}
+.header {
+     font-family: 'jmh_typewriterbold'; 
+     opacity: 100%;
+     
+     color: rgb(246, 242, 242);
+     position: relative;
+     text-align: center;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #A8A8A8;
+}
+.icon{
+     margin-top: 100px;
+}
+.ikun{
+     margin-top: 20px;
+     text-align: center;
+}
+.font{
+     font-family: 'jmh_typewriterbold';
+}
+.fa-solid:hover{
+     color:gray !important;
+}
+.content{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+}
+.pertama{
+     display: flex;
+     flex-direction: row;
+     flex-wrap:wrap;
+     margin: 20px;
+}
+.portugis{
+     margin-left: 20px;
+     margin-right: 20px;
+}
+.jepang{
+     margin-left: 20px;
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     margin-right: 20px;
+}
+#contentpertama{
+     background-color: #2B2B2B;
+}
+#contentkedua{
+     margin-top: -20px;
+     background-color: rgba(255, 255, 255, 0.94);
+}
+.kedua{
+  
+     margin: 20px;
+}
+.pls{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+}
+.perlawanan{
+     text-align: center;
+}
+.timeline {
+     position: relative;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+   /* The actual timeline (the vertical ruler) */
+   .timeline::after {
+     content: '';
+     position: absolute;
+     width: 6px;
+     background-color: #2B2B2B;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     margin-left: -3px;
+   }
+   
+   /* Container around content */
+   .konten {
+     padding: 10px 40px;
+     position: relative;
+     background-color: inherit;
+     width: 50%;
+   }
+   
+   /* The circles on the timeline */
+   .konten::after {
+     content: '';
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     right: -17px;
+     background-color: #2B2B2B;
+     border: 4px solid #FF9F55;
+     top: 15px;
+     border-radius: 50%;
+     z-index: 1;
+   }
+   
+   /* Place the container to the left */
+   .kiri {
+     left: -6.6%;
+   }
+   
+   /* Place the container to the right */
+   .kanan {
+     left: 50%;
+   }
+   
+   /* Add arrows to the left container (pointing right) */
+   .kiri::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     right: 30px;
+     border: medium solid #2B2B2B;
+     border-width: 10px 0 10px 10px;
+     border-color: transparent transparent transparent #2B2B2B;
+   }
+   
+   /* Add arrows to the right container (pointing left) */
+   .kanan::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     left: 30px;
+     border: medium solid #2B2B2B;
+     border-width: 10px 10px 10px 0;
+     border-color: transparent #2B2B2B transparent transparent;
+   }
+   
+   /* Fix the circle for containers on the right side */
+   .kanan::after {
+     left: -16px;
+   }
+   
+   /* The actual content */
+   .timeline-content {
+     padding: 20px 30px;
+     background-color: #2B2B2B;
+     position: relative;
+     border-radius: 6px;
+   }
+   .timeline-text{
+     color: white;
+   }
+   /* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+     /* Place the timelime to the left */
+       .timeline::after {
+         left: 31px;
+       }
+     
+     /* Full-width containers */
+       .konten {
+         width: 100%;
+         padding-left: 70px;
+         padding-right: 25px;
+       }
+     
+     /* Make sure that all arrows are pointing leftwards */
+       .konten::before {
+         left: 60px;
+         border: medium solid white;
+         border-width: 10px 10px 10px 0;
+         border-color: transparent white transparent transparent;
+       }
+     
+     /* Make sure all circles are at the same spot */
+       .kiri::after, .kanan::after {
+         left: 15px;
+       }
+     
+     /* Make all right containers behave like the left ones */
+       .kanan {
+         left: 0%;
+       }
+     }
+/* .scrolldown { display: flex; } */
+.proklamasi{
+
+     background-color: #2B2B2B;
+     text-align: center;
+}
