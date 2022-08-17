@@ -1,6 +1,6 @@
 # Perlawanan Perjajahan 1945
 
-Website ini dibuat seperti artikel karena saya bingung mau isi konten apaan dan filosopi website ini perjuangan melawan pendudukan Jepang yang dimana belum responsive karena sudh puyeng mau diapain.(referensi yang gua ambil sebelum di revisi sama yang bikin websitenya gua liatnya disini https://www.webdesignerdepot.com/2013/10/20-beautiful-monochromatic-sites/)
+Website ini dibuat seperti artikel karena saya bingung mau isi konten apaan, dan filosopi website ini perjuangan melawan pendudukan Jepang menggunakan tema monokrom agar sesaui dengan jaman dahulu.yang dimana belum responsive karena sudh puyeng mau diapain.(referensi yang gua ambil sebelum di revisi sama yang bikin websitenya gua liatnya disini https://www.webdesignerdepot.com/2013/10/20-beautiful-monochromatic-sites/)
 
 ## Pengumpulan Lomba CuyUniverse 
 
